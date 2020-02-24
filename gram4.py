@@ -90,9 +90,13 @@ def advp(i,value):
 # val_4 = sheet.cell_value(rand_4,3)
 
 # answer = val_1 + " " + val_2 + " " + val_4
-
+data = { }
+json.dumps(data)
 
 value = json.loads(sys.argv[1])['post']
+# value = "asdf"
+
+
 count = len(value)
 
 

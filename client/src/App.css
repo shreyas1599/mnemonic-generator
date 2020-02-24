@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Odibee+Sans&display=swap');
+
+.App {
+  text-align: center;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.App-header {
+  height: 150px;
+  padding: 20px;
+  background-image: linear-gradient(#ff9d2f, #ff6126);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  padding-top: 3em;
+}
+
+.mnemonic-input-search {
+  margin-top: 5em;
+  width: 50%;
+  height: 2em;
+  padding: 1em;
+  border: 1px solid #bdbdbd;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-radius: 5em;
+  font-size: 1em;
+}
+
+.mnemonic-input-search:focus {
+  border-color: greenyellow;
+}
+
+.mnemonic-submit {
+  margin-top: 5em;
+  text-align: center;
+  height: 3em;
+  width: 8em;
+  font-size: 0.8em;
+  background-color:#eb6734;
+  border-radius: 5em;
+  transform: scale(1);
+  transition: all 1.0s;
+  font-family: 'Open Sans';
+}
+
+.mnemonic-submit:hover {
+  transform: scale(1.2);
+  transition: all 1.0s;
+}
+
+hr {
+  display:block;
+  border:none;
+  color:white;
+  height:1px;
+  background:black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 550, from(#000), to(#fff));
+  margin-top: 3em;
+}
+
+.what-you-get-header {
+  font-family: 'Raleway';
+}
+
+.problem {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  height: 26em;
+}
+
+.problem .column{
+  padding: 10px;
+  -webkit-flex: 1; 
+  -ms-flex: 1; 
+  flex: 1; 
+}
+
+.column {
+  overflow-wrap: break-word;
+  text-align: left;
+  margin-top: 1em;
+  color: #979ea8;
+  line-height: 1.5em;
+}
+
+.column > img {
+  padding-left: 5em;
+  padding-top: 3em;
+}
+
+.problem-header {
+  font-family: 'Raleway';
+}
+
+.what-you-get {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  height: 15em;
+  margin-left: 10em;
+}
+
+.col:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.what-you-get .col{
+  padding: 10px;
+  -webkit-flex: 1; 
+  -ms-flex: 1; 
+  flex: 1; 
+  margin-left: 5em;
+  margin-top: 3em;
+}
+
+.col {
+  overflow-wrap: break-word;
+  text-align: left;
+  color: #979ea8;
+  line-height: 1.5em;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.col>img {
+  height: 6em;
+}
+
+.what-you-get-caption {
+  font-size: 2em;
+  text-align: left;
+  margin-left: -0.5em;
+  font-weight: bold;;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: greenyellow;
+}
+
+a:active {
+  color: #979ea8;
+}
+
+a:visited {
+  color: #979ea8; 
+}
+
+.really-simple-caption {
+  font-family: 'Odibee Sans';
+  font-size: 2em;
+}
+
+.syntax {
+  background-color: rgb(211, 204, 204);
+  width: 50%;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  color: black;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

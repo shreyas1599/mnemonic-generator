@@ -19,7 +19,7 @@ app.post('/api/world', (req, res) => {
     ]
   };
   let result = "";
-  p.PythonShell.run('gram4.py', options, function(err, results) {
+  p.PythonShell.run('test.py', options, function(err, results) {
     res.send(
         `${results}`,
       );

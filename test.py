@@ -8,10 +8,7 @@ from nltk import word_tokenize
 import os
 import random
 
-
 parsed = json.loads(sys.argv[1])['post'][2:]
-
-
 
 # Create a placeholder for model
 model = defaultdict(lambda: defaultdict(lambda: 0))
